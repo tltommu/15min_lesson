@@ -233,7 +233,7 @@ print(count)
 
 ---
 
-### C# code sample
+### C# Global and local example
 ```
 using System;
 
