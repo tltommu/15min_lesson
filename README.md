@@ -91,21 +91,26 @@ namespace HelloWorld
 	{
 		public static void Main(string[] args)
 		{
-  			  string name = "Jake";
-          int grade = 85;
-          float percentage = 85.5f;
-          bool passed = true;
-          char initial = 'J';
+			string name = "Jake";
+			int grade = 85;
+			float percentage = 85.5f;
+			bool passed = true;
+			char initial = 'J';
   
-          Console.WriteLine(name); // Console.WriteLine() is the print() function for C#
-          Console.WriteLine(grade);
-          Console.WriteLine(percentage);
-          Console.WriteLine(passed);
-          Console.WriteLine(initial);
+          		Console.WriteLine(name); // Console.WriteLine() is the print() function for C#
+          		Console.WriteLine(grade);
+          		Console.WriteLine(percentage);
+          		Console.WriteLine(passed);
+          		Console.WriteLine(initial);
 		}
 	}
 }
 ```
+
+### output
+![image](https://github.com/user-attachments/assets/95ea4a89-0c95-4653-893e-0f6e9afd87f2)
+
+
 
 ---
 
