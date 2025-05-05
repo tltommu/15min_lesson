@@ -21,7 +21,9 @@ Python has several built-in data types. Here are five key ones:
 | Character | 'A'        | A single letter              |
 | Boolean   | True, False| True/False values            |
 
-```python
+### python variable declaration and their types
+
+```
 name3 = "Jake"        # string
 grade = 85           # integer
 percentage = 85.5    # double (float)
@@ -33,7 +35,29 @@ print(grade)
 print(percentage)
 print(passed)
 print(initial)
+
+print(type(name3))
+print(type(grade))
+print(type(percentage))
+print(type(passed))
+print(type(initial))
 ````
+
+### output via kaggle
+
+```
+Jake
+85
+85.5
+True
+J
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'str'>
+```
+
 
 💡 In Python, we don’t need to declare the type — it figures it out for us!
 🧠 (Why do people say Python code is slow? It's partly because of dynamic typing.)
