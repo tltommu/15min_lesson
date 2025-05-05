@@ -64,7 +64,7 @@ J
 
 ---
 
-### 💻 C# Data Types (for Comparison)
+### 💻 C# Data Types (for Comparison) where you can go to [onecompiler](https://onecompiler.com/) to try it
 
 | Data Type | Example                         | Size  (memory)        | Description                                                |
 | --------- | ------------------------------- | --------------------- | ---------------------------------------------------------- |
@@ -76,12 +76,35 @@ J
 | char      | `char initial = 'T';`           | 2 bytes               | A single character                                         |
 | string    | `string name = "Tom";`          | 2 bytes per character | A sequence of characters                                   |
 
+
+
 ```csharp
-string name = "Jake";
-int grade = 85;
-float percentage = 85.5f;
-bool passed = true;
-char initial = 'J';
+C#
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+  			  string name = "Jake";
+          int grade = 85;
+          float percentage = 85.5f;
+          bool passed = true;
+          char initial = 'J';
+  
+          Console.WriteLine(name); // Console.WriteLine() is the print() function for C#
+          Console.WriteLine(grade);
+          Console.WriteLine(percentage);
+          Console.WriteLine(passed);
+          Console.WriteLine(initial);
+		}
+	}
+}
 ```
 
 ---
