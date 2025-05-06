@@ -58,59 +58,8 @@ J
 <class 'str'>
 ```
 
-
 💡 In Python, we don’t need to declare the type — it figures it out for us!
 🧠 (Why do people say Python code is slow? It's partly because of dynamic typing.)
-
----
-
-### 💻 C# Data Types (for Comparison) where you can go to [onecompiler](https://onecompiler.com/) to try it
-
-| Data Type | Example                         | Size  (memory)        | Description                                                |
-| --------- | ------------------------------- | --------------------- | ---------------------------------------------------------- |
-| int       | `int age = 18;`                 | 4 bytes               | Stores whole numbers from -2,147,483,648 to 2,147,483,647  |
-| long      | `long population = 8000000000;` | 8 bytes               | Stores whole numbers from -9 quintillion to +9 quintillion |
-| float     | `float pi = 3.14f;`             | 4 bytes               | Decimal (6–7 digits precision)                             |
-| double    | `double price = 19.99;`         | 8 bytes               | Decimal (15 digits precision)                              |
-| bool      | `bool passed = true;`           | 1 byte                | True or False                                              |
-| char      | `char initial = 'T';`           | 2 bytes               | A single character                                         |
-| string    | `string name = "Tom";`          | 2 bytes per character | A sequence of characters                                   |
-
-
-
-```csharp
-C#
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-namespace HelloWorld
-{
-	public class Program
-	{
-		public static void Main(string[] args)
-		{
-			string name = "Jake";
-			int grade = 85;
-			float percentage = 85.5f;
-			bool passed = true;
-			char initial = 'J';
-  
-          		Console.WriteLine(name); // Console.WriteLine() is the print() function for C#
-          		Console.WriteLine(grade);
-          		Console.WriteLine(percentage);
-          		Console.WriteLine(passed);
-          		Console.WriteLine(initial);
-		}
-	}
-}
-```
-
-### output
-![image](https://github.com/user-attachments/assets/95ea4a89-0c95-4653-893e-0f6e9afd87f2)
-
-
 
 ---
 
@@ -135,29 +84,6 @@ Tom
 17
 ```
 
-### C# Version
-
-```csharp
-using System;
-
-namespace MyApplication
-{
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      int age = 17;
-      string name = "Tom";
-      Console.WriteLine(age);
-      Console.WriteLine(name);
-    }
-  }
-}
-```
-
-### C# output
-![image](https://github.com/user-attachments/assets/45bdee50-3df9-4a76-91f9-a6fb0590dff2)
-
 🧠 Think of variables like labeled boxes. You can put something inside, and even swap it out later.
 
 ---
@@ -181,52 +107,6 @@ print(PI)
 📌 "In real life, PI doesn’t change. That’s why we treat it as a constant."
 
 ---
-
-### C# another variable example 
-
-```
-using System;
-
-namespace MyApplication
-{
-  class Program
-  { 
-    static void Main(string[] args)
-    {
-      string name = "Tom3"; //declaring name as variable
-      Console.WriteLine(name);
-      name = "Tom2";
-      Console.WriteLine(name);
-    }
-  }
-}
-
-```
-
-### output (hence the output can change)
-![image](https://github.com/user-attachments/assets/8a4e636a-3815-4518-84fc-6fe85b608f4a)
-
-### C# const example
-```
-using System;
-
-namespace MyApplication
-{
-  class Program
-  { 
-    static void Main(string[] args)
-    {
-      Const string Constname = "Tom3"; //declaring Constname as const
-      Console.WriteLine(Constname);
-      Constname = "Tom2";
-      Console.WriteLine(Constname);
-    }
-  }
-}
-```
-### output (throwing an error as we declared it Constname as Constant)
-![image](https://github.com/user-attachments/assets/18e390ce-c25b-42bd-be6d-2029ecc04f8f)
-
 
 ## 🔹 Part 4 – Local vs Global Variables (4 mins)
 
@@ -285,49 +165,6 @@ print(count)
 
 ---
 
-### C# Global and local example
-```
-using System;
-
-namespace MyApplication
-{
-  class Program
-  {
-    // 🌍 Global variable (class-level/static field)
-    static string globalMessage = "Hello from global scope";
-
-    static void Main(string[] args)
-    {
-      // 🧪 Local variable (only available in Main)
-      string localMessage = "Hello from local scope";
-
-      Console.WriteLine(globalMessage);  // ✅ Works
-      Console.WriteLine(localMessage);   // ✅ Works
-
-      PrintMessages();
-        //uncomment the line below and run it yourself to see if you can get my output
-      // Console.WriteLine(otherLocal);  // ❌ Error: does not exist in this context
-    }
-
-    static void PrintMessages()
-    {
-      Console.WriteLine(globalMessage);  // ✅ Can access global
-      string otherLocal = "Local inside PrintMessages";
-      Console.WriteLine(otherLocal);     // ✅ Works only here
-    }
-  }
-}
-```
-### output without the error line
-![image](https://github.com/user-attachments/assets/79d3824f-0075-414f-90e7-68e1172e2131)
-
-
-
-### output with the error line
-![image](https://github.com/user-attachments/assets/d5b2374d-259d-485f-9ae0-119ba7e6ccd4)
-
-
-
 ## 💻 Part 5 – Mini Live Coding Demo (2 mins)
 
 ```python
@@ -379,4 +216,158 @@ Write a Python for loop that prints numbers from 1 to 5 using a variable.
 
 These two questions will guide your debugging and help you write cleaner code.
 
+# Addtional Material: C# Examples
 
+## 💻 Part 2 Reference:  C# Data Types where you can go to [onecompiler](https://onecompiler.com/) to try it
+
+| Data Type | Example                         | Size  (memory)        | Description                                                |
+| --------- | ------------------------------- | --------------------- | ---------------------------------------------------------- |
+| int       | `int age = 18;`                 | 4 bytes               | Stores whole numbers from -2,147,483,648 to 2,147,483,647  |
+| long      | `long population = 8000000000;` | 8 bytes               | Stores whole numbers from -9 quintillion to +9 quintillion |
+| float     | `float pi = 3.14f;`             | 4 bytes               | Decimal (6–7 digits precision)                             |
+| double    | `double price = 19.99;`         | 8 bytes               | Decimal (15 digits precision)                              |
+| bool      | `bool passed = true;`           | 1 byte                | True or False                                              |
+| char      | `char initial = 'T';`           | 2 bytes               | A single character                                         |
+| string    | `string name = "Tom";`          | 2 bytes per character | A sequence of characters                                   |
+
+
+```csharp
+C#
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			string name = "Jake";
+			int grade = 85;
+			float percentage = 85.5f;
+			bool passed = true;
+			char initial = 'J';
+  
+          		Console.WriteLine(name); // Console.WriteLine() is the print() function for C#
+          		Console.WriteLine(grade);
+          		Console.WriteLine(percentage);
+          		Console.WriteLine(passed);
+          		Console.WriteLine(initial);
+		}
+	}
+}
+```
+
+### output
+![image](https://github.com/user-attachments/assets/95ea4a89-0c95-4653-893e-0f6e9afd87f2)
+
+## 📚 Part 3 Reference: C# Variables & Constant
+
+```csharp
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int age = 17;
+      string name = "Tom";
+      Console.WriteLine(age);
+      Console.WriteLine(name);
+    }
+  }
+}
+```
+
+### C# output
+![image](https://github.com/user-attachments/assets/45bdee50-3df9-4a76-91f9-a6fb0590dff2)
+
+### C# another variable example 
+
+```
+using System;
+
+namespace MyApplication
+{
+  class Program
+  { 
+    static void Main(string[] args)
+    {
+      string name = "Tom3"; //declaring name as variable
+      Console.WriteLine(name);
+      name = "Tom2";
+      Console.WriteLine(name);
+    }
+  }
+}
+
+```
+
+### output (hence the output can change)
+![image](https://github.com/user-attachments/assets/8a4e636a-3815-4518-84fc-6fe85b608f4a)
+
+### C# const example
+```
+using System;
+
+namespace MyApplication
+{
+  class Program
+  { 
+    static void Main(string[] args)
+    {
+      Const string Constname = "Tom3"; //declaring Constname as const
+      Console.WriteLine(Constname);
+      Constname = "Tom2";
+      Console.WriteLine(Constname);
+    }
+  }
+}
+```
+### output (throwing an error as we declared it Constname as Constant)
+![image](https://github.com/user-attachments/assets/18e390ce-c25b-42bd-be6d-2029ecc04f8f)
+
+## 📖 Part 4 Reference: C# Global and local example
+```
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    // 🌍 Global variable (class-level/static field)
+    static string globalMessage = "Hello from global scope";
+
+    static void Main(string[] args)
+    {
+      // 🧪 Local variable (only available in Main)
+      string localMessage = "Hello from local scope";
+
+      Console.WriteLine(globalMessage);  // ✅ Works
+      Console.WriteLine(localMessage);   // ✅ Works
+
+      PrintMessages();
+        //uncomment the line below and run it yourself to see if you can get my output
+      // Console.WriteLine(otherLocal);  // ❌ Error: does not exist in this context
+    }
+
+    static void PrintMessages()
+    {
+      Console.WriteLine(globalMessage);  // ✅ Can access global
+      string otherLocal = "Local inside PrintMessages";
+      Console.WriteLine(otherLocal);     // ✅ Works only here
+    }
+  }
+}
+```
+### output without the error line
+![image](https://github.com/user-attachments/assets/79d3824f-0075-414f-90e7-68e1172e2131)
+
+
+
+### output with the error line
+![image](https://github.com/user-attachments/assets/d5b2374d-259d-485f-9ae0-119ba7e6ccd4)
