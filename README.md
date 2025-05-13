@@ -1,3 +1,4 @@
+# This is not the most updated version of the md file, please refer to the kaggle notebook for the most updated version.
 
 # 🎓 Introduction to Variables, Constants, Scope, and Data Types in Python
 
